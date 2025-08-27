@@ -116,15 +116,15 @@ import * as BufferGeometryUtils from 'jsm/utils/BufferGeometryUtils.js';
 
 import { Reflector } from 'jsm/objects/Reflector.js';
 
-import { GUI } from 'https://cdn.jsdelivr.net/npm/dat.gui@0.7.9/build/dat.gui.module.js';
+// import { GUI } from 'https://cdn.jsdelivr.net/npm/dat.gui@0.7.9/build/dat.gui.module.js';
 
 import { GLTFLoader } from 'jsm/loaders/GLTFLoader.js';
 
 
 
 
-const gui = new GUI();
-gui.add(transition,"phase",0.0,3.0,0.01).name('Transition between song');
+// const gui = new GUI();
+// gui.add(transition,"phase",0.0,3.0,0.01).name('Transition between song');
 const canvas = document.querySelector("#threejsbg");
 // const renderer = new THREE.WebGLRenderer({ canvas });
 const w = window.innerWidth;
