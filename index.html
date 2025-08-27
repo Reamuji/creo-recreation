@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creo</title>
+    <style>
+      @font-face {
+        font-family: 'Reem Kufi';
+        src: url('fonts/ReemKufi.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        color:#c4cad0;
+        /* background-image: url("never make it.png"); */
+        background-size: cover;
+        font-family: 'Reem Kufi', 'Poppins', 'Trebuchet MS', 'Verdana', sans-serif; 
+      }
+      #threejsbg{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: -100;
+      }
+      main{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+      }
+      #SongTitle{
+        width: 100%;
+        font-family: 'Reem Kufi', 'Poppins', 'Trebuchet MS', 'Verdana', sans-serif;
+        position: absolute;
+        top: 12vh;
+        text-align: center;
+        
+        font-size: 4vh;
+        letter-spacing: 0.85em;
+        mix-blend-mode: difference;
+        
+      }
+      .highlighted{
+        background-color: white;
+        color: #000000;
+      }
+
+      #SongTitleContainer{
+        display:flex;
+      }
+      #LeftButton{
+        position: absolute;
+        left: 3vw;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      #RightButton{
+        position: absolute;
+        right: 3vw;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .button{
+        cursor: pointer;
+        font-size: 7vh;
+        mix-blend-mode: difference
+      }
+    </style>
+    <script type="importmap">
+			{
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+          "jsm/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
+        }
+			}
+		</script>
+  </head>
+  <body>
+    <canvas id="threejsbg"></canvas>
+    <main>
+      <div id="SongTitle">
+        <span id="SongTitlePadding">&nbsp;</span><span id="SongTitleSpan">UNVEIL</span>
+      </div>
+      <div id="LeftButton" class="button"><</div>
+      <div id="RightButton" class="button">></div>
+    </main>
+    <script>
+
+       
+    </script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
